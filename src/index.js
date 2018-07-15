@@ -3,8 +3,11 @@ import hapi from 'hapi'
 import routes from './routes'
 
 const server = hapi.server({
+    host: 'localhost',
     port: 3500,
-    host: 'localhost'
+    router: {
+        stripTrailingSlash: true
+    }
 })
 
 server.route( routes )
