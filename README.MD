@@ -19,6 +19,10 @@
   - userName
   - email
   - password
+- List of users
+  ```bash
+    GET: http://localhost:3500/users
+  ```
 - Login (Get the JWT token valid for 7days)
   ```bash
     POST: http://localhost:3500/auth/signin
